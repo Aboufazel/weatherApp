@@ -25,16 +25,27 @@
   .rightSide__bottomBox{
     .feuRow{
       display: flex;
-      flex-direction: column;
+      flex-direction: column !important;
       justify-content: center;
       align-items: center;
       width: 100%;
       .feuBox{
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse !important;
         align-items: center;
         width: 95% !important;
         margin: 5px 0 !important;
+        .feuInfo{
+          display: flex;
+          justify-content: space-around;
+          align-items: end;
+          flex-direction: column;
+          width: 80%;
+          padding: 0 5px;
+          span{
+            font-size: 12px !important;
+          }
+        }
       }
     }
   }
@@ -43,7 +54,17 @@
 }
 
 @media screen and (min-width: 768px){
-
+  .statusCard{
+    width: 95% !important;
+  }
+  .feuBox{
+    padding: 2px;
+    font-size: 10px;
+    .feuInfo{
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 .statusCard{
@@ -144,11 +165,14 @@
     }
     .feuRow{
       display: flex;
+      flex-direction: row-reverse;
       justify-content: center;
       width: 100%;
       .feuBox{
         display: flex;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(40, 44, 52, 0.5);
+        backdrop-filter: blur(9.4px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         flex-direction: column;
         margin: 0 5px;
         border-radius: 15px;
