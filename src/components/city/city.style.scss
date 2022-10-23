@@ -1,11 +1,73 @@
+@media screen and (max-width: 426px){
+  .cityBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(100px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #011423 !important;
+    width: 45px;
+    height: 45px;
+    padding: 15px;
+
+  }
+}
+
+
+
 .cityBox{
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.4px);
   -webkit-backdrop-filter: blur(100px);
   border: 1px solid rgba(255, 255, 255, 0.4);
   color: white;
-  width: 25px;
-  height: 150px;
+  width: 45px;
+  height: 45px;
+  padding: 15px;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  h4{
+    margin: 0;
+    font-size: 12px;
+  }
+}
+
+.cityBox:hover{
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(9.4px);
+  color: #FFBB16;
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.cityRow{
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(9.4px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 80%;
+  overflow-x: auto;
+  padding:10px 20px;
+  gap: 15px;
 }
