@@ -1,10 +1,12 @@
-import Sunny from "../../assets/pic/MostlyClearNight.svg";
+import Night from "../../assets/pic/MostlyClearNight.svg";
+import Sunny from "../../assets/pic/MostlySunnyDay.svg";
 import Container from "../container/Container";
 import './StatusCard.scss'
 
 
 
 const StatusCard = ({api}) => {
+
     try{
         return(
             <Container>
@@ -16,7 +18,7 @@ const StatusCard = ({api}) => {
                             </h3>
                         </div>
                         <div>
-                            <img src={Sunny}/>
+                            <img src={(6- (new Date().getHours()) ) <= 0 ? `${Sunny}` : `${Night}`}/>
                         </div>
                         <div>
                             <h5>
@@ -81,7 +83,7 @@ const StatusCard = ({api}) => {
                             <div className={'feuRow'}>
                                 <div className={'feuBox'}>
                                     <div>
-                                        <img src={Sunny}/>
+                                        <img src={(6- (new Date().getHours()) ) <= 0 ? `${Sunny}` : `${Night}`}/>
                                     </div>
                                     <div className={'feuInfo'}>
                                       <span>
@@ -102,7 +104,7 @@ const StatusCard = ({api}) => {
                                 </div>
                                 <div className={'feuBox'}>
                                     <div>
-                                        <img src={Sunny}/>
+                                        <img src={(6- (new Date().getHours()) ) <= 0 ? `${Sunny}` : `${Night}`}/>
                                     </div>
                                     <div className={'feuInfo'}>
                                       <span>
@@ -123,7 +125,7 @@ const StatusCard = ({api}) => {
                                 </div>
                                 <div className={'feuBox'}>
                                     <div>
-                                        <img src={Sunny}/>
+                                        <img src={(6- (new Date().getHours()) ) <= 0 ? `${Sunny}` : `${Night}`}/>
                                     </div>
                                     <div className={'feuInfo'}>
                                       <span>
@@ -144,7 +146,7 @@ const StatusCard = ({api}) => {
                                 </div>
                                 <div className={'feuBox'}>
                                     <div>
-                                        <img src={Sunny}/>
+                                        <img src={(6- (new Date().getHours()) ) <= 0 ? `${Sunny}` : `${Night}`}/>
                                     </div>
                                     <div className={'feuInfo'}>
                                       <span>
