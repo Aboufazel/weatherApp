@@ -1,16 +1,14 @@
 
-import './App.css';
-
-
 import CityRow from "./components/city/cityRow";
-import {Data} from "./getapi/data";
+import WelcomeLayout from "./Layout/WelcomeLayout";
+import Container from "./components/container/Container";
 
 function App() {
   return (
-    <div className="App">
-        <CityRow/>
-        <Data/>
-    </div>
+     <Container>
+       <CityRow/>
+       <WelcomeLayout/>
+     </Container>
   );
 }
 
