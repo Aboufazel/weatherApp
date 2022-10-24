@@ -1,13 +1,11 @@
 
-import CityRow from "./components/city/cityRow";
-import WelcomeLayout from "./Layout/WelcomeLayout";
 import Container from "./components/container/Container";
+import Root from "./routes/routes";
 
 function App() {
   return (
      <Container>
-       <CityRow/>
-       <WelcomeLayout/>
+        <Root/>
      </Container>
   );
 }
