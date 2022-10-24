@@ -1,4 +1,4 @@
-import Sunny from "../../assets/pic/MostlySunnyDay.svg";
+import sunny from "../../assets/pic/MostlySunnyDay.svg";
 import Container from "../container/Container";
 import './StatusCard.scss'
 
@@ -16,7 +16,7 @@ const StatusCard = ({api}) => {
                             </h3>
                         </div>
                         <div>
-                            <img src={Sunny}/>
+                            <img src={sunny}/>
                         </div>
                         <div>
                             <h5>
