@@ -2,15 +2,18 @@
 import CityBox from "./cityBox";
 import Container from "../container/Container";
 import {city} from "../../getapi/Database";
+import {Link} from "react-router-dom";
 const CityRow = () => {
   return(
       <Container>
          <div className={"cityRow"}>
              {
                  city.map(item =>(
-                     <div key={item.id}>
-                         <CityBox name={item.title}/>
-                     </div>
+                     <Link to={`city/${item.id}`}  key={item.id}>
+                         <div>
+                             <CityBox name={item.title}/>
+                         </div>
+                     </Link>
                  ))
              }
          </div>

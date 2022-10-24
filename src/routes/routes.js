@@ -3,6 +3,7 @@ import {RouterProvider ,} from "react-router";
 import Layout from "../Layout/Layout";
 import cityCard from "../components/cityCard/cityCard";
 import WelcomeLayout from "../Layout/WelcomeLayout";
+import CityPage from "../page/CityPage";
 
 
 const Root = ()=>{
@@ -16,6 +17,9 @@ const Root = ()=>{
                     {
                         path:"/",
                         element:<WelcomeLayout/>
+                    },{
+                      path: "city/:cityId",
+                      element: <CityPage/>
                     }
                 ]
             },
