@@ -1,10 +1,11 @@
 import './Layout.style.scss'
-import WelcomePic from '../assets/pic/icon2.png'
+import NightPic from '../assets/pic/icon2.png'
+import SunnyPic from '../assets/pic/sunny.png'
 const WelcomeLayout = () => {
   return(
       <div className={'welcomeLayout'}>
           <div>
-              <img src={WelcomePic}/>
+              <img src={(6- (new Date().getHours()) ) <= 0 ? `${SunnyPic}` :  `${NightPic}`}/>
           </div>
           <div>
             <h3>
