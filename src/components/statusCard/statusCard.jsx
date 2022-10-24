@@ -90,8 +90,10 @@ const StatusCard = ({api}) => {
                                         <div>
                                                                                    <span>
                                            دمای هوا :
-                                          <span style={{marginRight: 5 , marginLeft:5}}>
-                                              {(Math.floor((api.list[1].main.temp) - 273))}
+                                          <span>
+                                              <span style={{marginRight: 5 , marginLeft:5}}>
+                                                  {(Math.floor((api.list[1].main.temp) - 273))}
+                                              </span>
                                               درجه سانتی گراد
                                           </span>
                                       </span>
@@ -109,8 +111,10 @@ const StatusCard = ({api}) => {
                                         <div>
                                                                                    <span>
                                            دمای هوا :
-                                          <span style={{marginRight: 5}}>
-                                              {(Math.floor((api.list[2].main.temp) - 273))}
+                                          <span>
+                                              <span style={{marginRight: 5 , marginLeft:5}}>
+                                                  {(Math.floor((api.list[2].main.temp) - 273))}
+                                              </span>
                                               درجه سانتی گراد
                                           </span>
                                       </span>
@@ -129,7 +133,9 @@ const StatusCard = ({api}) => {
                                             <span>
                                            دمای هوا :
                                           <span style={{marginRight: 5}}>
-                                              {(Math.floor((api.list[3].main.temp) - 273))}
+                                              <span style={{marginRight: 5 , marginLeft:5}}>
+                                                  {(Math.floor((api.list[3].main.temp) - 273))}
+                                              </span>
                                               درجه سانتی گراد
                                           </span>
                                       </span>
@@ -148,7 +154,9 @@ const StatusCard = ({api}) => {
                                                                                  <span>
                                            دمای هوا :
                                           <span style={{marginRight: 5}}>
-                                              {(Math.floor((api.list[4].main.temp) - 273))}
+                                              <span style={{marginRight: 5 , marginLeft:5}}>
+                                                  {(Math.floor((api.list[4].main.temp) - 273))}
+                                              </span>
                                               درجه سانتی گراد
                                           </span>
                                       </span>
