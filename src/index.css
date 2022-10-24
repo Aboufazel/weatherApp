@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: url("./assets/pic/background.jpg");
   background-size: cover;
-
+  min-height: 100vh;
 }
 
 code {
